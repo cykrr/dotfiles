@@ -1,0 +1,11 @@
+# vim: filetype=swayconfig
+
+# krr's config for sway
+# Read `man 5 sway` for a complete reference.
+
+set $term foot
+set $menu "~/gits/mounch/mounch.py -p | xargs swaymsg exec --"
+set $display  "DSI-1"
+font Pango:Hack Nerd Font Regular 8
+output $display bg ~/Pictures/wall.jpg fill scale 1.5
+include /home/$USER/.config/sway/config.d/*
